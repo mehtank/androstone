@@ -1,0 +1,121 @@
+<cards set="base">
+	<card name="Barkeep" cost="2" gold="1"
+		type="village" subtype="villager"
+		count="8"
+		
+		title="Barkeep">
+		<effect name="plusbuy" 
+			type="village"
+			text="You may purchase one additional card this turn." />
+		<effect name="plusgold"
+			type="village"
+			text="Destroy this card to gain 2 Gold." />
+	</card>
+
+
+	<cardgroup type="hero"
+		name="Thyrian"
+		title="Thyrian">
+
+		<card name="ThyrianSquire" cost="7" strength="6"
+			subtype="fighter"
+			xp="2" attack="2" level="1" 
+			count="6"
+			
+			title="Thyrian Squire">
+			<effect name="destroyfood"
+				type="dungeon"
+				text="Destroy one Food for ATTACK +2." />			
+		</card>
+		<card name="ThyrianKnight" cost="9" strength="8"
+			subtype="fighter"
+			xp="3" attack="4" level="2" 
+			count="4"
+			
+			title="Thyrian Knight">
+			<effect name="militiagain"
+				type="dungeon"
+				text="All Militia gain ATTACK +1." />
+			<effect name="destroyfood"
+				type="dungeon"
+				text="Destroy one Food for ATTACK +2." />			
+		</card>
+		<card name="ThyrianLord" cost="11" strength="9"
+			subtype="fighter"
+			vp="2" attack="4" level="3" 
+			count="2"
+			
+			title="Thyrian Lord">
+			<effect name="destroyfood"
+				type="dungeon"
+				text="Destroy one Food to place one 2 or less VP monster from the hall into your discard pile." />
+			<effect name="herogain"
+				type="dungeon"
+				text="All heroes other than fighters gain ATTACK +2." />
+		</card>
+	</cardgroup>
+	
+	<cardgroup type="monster"
+		name="Abyssal"
+		title="Abyssal">
+		<card name="ArchdukeOfPain" gold="3"
+			health="10" xp="3" vp="8" 
+			count="1"
+			
+			title="Archduke Of Pain">
+			<effect name="needmagic"
+				type="battle"
+				text="Magic Attack required." />
+			<effect name="destroy"
+				type="battle"
+				text="Destroy all Clerics and Wizards." />
+			<effect name="breach"
+				type="breach"
+				text="Destroy two cards from each Hero stack in the Village." />
+		</card>
+		
+		<card name="Grudgebeast" gold="1"
+			health="4" xp="1" vp="2" 
+			count="2"
+			
+			title="Grudgebeast" />
+			
+		<card name="Succubus" gold="2"
+			health="4" xp="2" vp="4"
+			count="2"
+			
+			title="Succubus">
+			<effect name="needmagic"
+				type="battle"
+				text="1/2 Attack without Magic Attack present" />
+			
+		</card>
+
+		<card name="Tormentor" gold="2"
+			health="8" xp="3" vp="6"
+			count="2"
+			
+			title="Tormentor">
+			<effect name="destroy"
+				type="battle"
+				text="Destroy one Cleric." />
+			<effect name="needweapon"
+				type="battle"
+				text="1/2 Attack without Weapon present" />
+		</card>
+
+		<card name="TheUnchained" gold="1"
+			health="5" xp="1" vp="3"
+			count="3"
+			
+			title="The Unchained">
+			<effect name="disease"
+				type="battle"
+				text="Gain one Disease." />
+			<effect name="attack"
+				type="alwaysdungeon"
+				text="MAGIC ATTACK +1" />
+		</card>
+
+	</cardgroup>
+</cards>

@@ -1,0 +1,53 @@
+<cards set="common">
+	<card name="Torch" cost="3" gold="2" light="1"
+		type="village" subtype="item" trait="light"
+		count="10"
+
+		title="Torch"
+	/>
+	
+	<card name="Disease" 
+		type="disease"
+		count="1"
+	
+		title="Disease">
+		<effect name="disease"
+			type="alwaysdungeon"
+			text="ATTACK -1" />
+	</card>
+	
+	<card name="Dagger" cost="3" gold="1" weight="2"
+		type="village" subtype="weapon" trait="edged"
+		count="10"
+		attack="1"
+
+		title="Dagger"
+	/>
+	
+	<card name="IronRations" cost="2" gold="2" 
+		type="village" subtype="item" trait="food"
+		count="10"
+		
+		title="Iron Rations">
+		<effect name="plusstrength"
+			type="dungeon"
+			text="One Hero gains Strength +2." />
+	</card>
+	
+	<card name="Militia" cost="0" gold="0" weight="2"
+		type="hero" subtype="militia"
+		xp="3" attack="1" level="0"
+		count="30"
+
+		title="Militia"
+	/>
+	
+	<card name="StoneOfMystery" 
+		type="stone"
+		vp="3"
+		count="1"
+		
+		title="Stone of Mystery"
+		text="... and the thunder of the wind shouts back."
+	/>
+</cards>
